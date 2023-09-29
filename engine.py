@@ -1,10 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torchvision
 import torchvision.transforms as transforms
 import os 
-from PIL import Image
 
 
 def model_predict(image):
@@ -61,11 +59,5 @@ def model_predict(image):
     # Ottieni il nome della classe predetta
     predicted_class_name = classes[predicted_class.item()]
 
-    print(f'La classe predetta per l\'immagine è: {predicted_class_name}')
+    print(f'{predicted_class_name}')
 
-
-path = os.getcwd()
-
-img = Image.open(path+'/quest/benign.jpg')
-
-model_predict(img)

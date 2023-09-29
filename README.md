@@ -6,7 +6,7 @@ This project involves the development of a Convolutional Neural Network (CNN) de
 
 ## Repository Contents
 
-- **main.py**: This is the main application file. You can use it to input an image of a skin lesion, and the CNN will provide a prediction regarding its malignancy.
+- **main.py**: This is the main application file. All the images in the folder 'quest' will be analysed, and the CNN will provide a prediction regarding its malignancy.
 
 - **cnn_train.py**: This script was used to train the neural network on a labeled dataset of skin lesion images. It contains the training process and model architecture.
 
